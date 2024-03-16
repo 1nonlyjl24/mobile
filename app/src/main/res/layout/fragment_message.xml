@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/skyblue"
+    tools:context=".MessageFragment">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="373dp"
+        android:layout_height="152dp"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/rounded1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:text="Message Therapy"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="28dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="@color/skyblue"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <ScrollView
+        android:layout_width="354dp"
+        android:layout_height="597dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="310dp"
+                android:layout_height="142dp"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/massage1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="297dp"
+                android:layout_height="76dp"
+                android:layout_marginTop="44dp"
+                android:text="•Intake and Assessment: The massage therapist begins by conducting an intake interview with the client to gather information about their medical history, current health status, areas of concern or discomfort, and any specific goals for the massage session. This information helps the therapist assess the client's needs and develop an appropriate treatment plan."
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.508"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="•Goal Setting: Based on the client's input and the therapist's assessment, specific goals for the massage session are established. These goals may include relieving muscle tension, improving flexibility, reducing pain, promoting relaxation, or addressing specific musculoskeletal issues."
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="•Preparation: The client is provided with privacy to undress to their comfort level and lie on the massage table, usually covered with a sheet or towel. The therapist leaves the room to allow the client to prepare and then returns to begin the massage session."
+                android:textSize="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:textColor="@color/white"
+                android:text="•Implementation: It guides the patient through the exercises and techniques outlined in the treatment plan during therapy sessions. They also educate the patient on proper form, body mechanics, and ways to prevent further injury."
+                android:textSize="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="•Techniques and Treatment: During the massage session, the therapist uses a variety of massage techniques and modalities to address the client's needs and goals. These techniques may include:"
+                android:textSize="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="240dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="28dp"
+                android:text="•Swedish massage: Gentle, flowing strokes to promote relaxation and improve circulation."
+                android:textColor="@color/white"
+                android:textSize="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="240dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="28dp"
+                android:text="•Deep tissue massage: Firm pressure and targeted techniques to address muscle tension and release knots or adhesions."
+                android:textColor="@color/white"
+                android:textSize="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="240dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="28dp"
+                android:text="•Trigger point therapy: Applying pressure to specific points of muscle tension to alleviate pain and improve range of motion."
+                android:textColor="@color/white"
+                android:textSize="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="240dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="28dp"
+                android:text="•Neuromuscular therapy: Techniques to address nerve compression or dysfunction, often used to treat conditions like carpal tunnel syndrome or sciatica."
+                android:textColor="@color/white"
+                android:textSize="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="•Communication and Feedback: Throughout the massage session, the therapist checks in with the client regarding pressure, comfort level, and any areas of discomfort. Open communication between the client and therapist is encouraged to ensure that the massage is effective and comfortable."
+                android:textSize="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="•Closure: Towards the end of the session, the therapist gradually reduces pressure and transitions to lighter strokes to signal the conclusion of the massage. The client is given time to slowly transition back to a seated position and offered water or any post-massage recommendations for self-care."
+                android:textSize="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="•Follow-up and Recommendations: After the massage session, the therapist may provide recommendations for self-care strategies, such as stretching exercises, hydration, heat or cold therapy, and follow-up massage sessions as needed to address ongoing concerns or maintain wellness."
+                android:textSize="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

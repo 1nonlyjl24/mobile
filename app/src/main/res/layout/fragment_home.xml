@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skyblue"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+
+    <View
+        android:id="@+id/header"
+        android:layout_width="364dp"
+        android:layout_height="76dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="108dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/big_therapy"
+        app:layout_constraintEnd_toEndOf="@+id/header"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="@+id/header"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="366dp"
+        android:layout_height="636dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/Physically"
+                android:layout_width="310dp"
+                android:layout_height="136dp"
+                android:layout_marginTop="44dp"
+                android:background="@drawable/rounded1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Physical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Physical Therapy"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/Physically"
+                app:layout_constraintHorizontal_bias="0.078"
+                app:layout_constraintStart_toStartOf="@+id/Physically"
+                app:layout_constraintTop_toTopOf="@+id/Physically" />
+
+            <ImageView
+                android:id="@+id/phy"
+                android:layout_width="100dp"
+                android:layout_height="119dp"
+                android:layout_marginTop="-15px"
+                android:src="@drawable/physical"
+                app:layout_constraintBottom_toBottomOf="@+id/Physically"
+                app:layout_constraintEnd_toEndOf="@+id/Physically"
+                app:layout_constraintHorizontal_bias="0.711"
+                app:layout_constraintStart_toEndOf="@+id/physical_purpose"
+                app:layout_constraintTop_toTopOf="@+id/Physically"
+                app:layout_constraintVertical_bias="0.615" />
+
+            <TextView
+                android:id="@+id/physical_purpose"
+                android:layout_width="127dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="8dp"
+                android:text="Purpose: Focuses on restoring and improving physical function and mobility."
+                android:textColor="@color/faded_black"
+                android:textSize="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/Physical"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/Physical"
+                app:layout_constraintTop_toBottomOf="@+id/Physical" />
+
+            <TextView
+                android:id="@+id/physical_injury"
+                android:layout_width="128dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:text="Injuries: Musculoskeletal injuries, post-surgery rehabilitation, sports injuries, etc."
+                android:textColor="@color/faded_black"
+                android:textSize="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/physical_purpose"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/physical_purpose"
+                app:layout_constraintTop_toBottomOf="@+id/physical_purpose" />
+
+            <View
+                android:id="@+id/button2"
+                android:layout_width="310dp"
+                android:layout_height="136dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/rounded1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.509"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Physically" />
+
+            <ImageView
+                android:id="@+id/occ"
+                android:layout_width="122dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="-15px"
+                android:src="@drawable/occupational"
+                app:layout_constraintBottom_toBottomOf="@+id/button2"
+                app:layout_constraintEnd_toEndOf="@+id/button2"
+                app:layout_constraintHorizontal_bias="0.711"
+                app:layout_constraintStart_toEndOf="@+id/occupational_purpose"
+                app:layout_constraintTop_toTopOf="@+id/button2"
+                app:layout_constraintVertical_bias="0.615" />
+
+            <TextView
+                android:id="@+id/Occupational"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Occupational Therapy"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/button2"
+                app:layout_constraintHorizontal_bias="0.078"
+                app:layout_constraintStart_toStartOf="@+id/button2"
+                app:layout_constraintTop_toTopOf="@+id/button2" />
+
+            <TextView
+                android:id="@+id/occupational_purpose"
+                android:layout_width="146dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="8dp"
+                android:text="Purpose: Aims to help individuals regain independence in daily activities."
+                android:textColor="@color/faded_black"
+                android:textSize="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/Occupational"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/Occupational"
+                app:layout_constraintTop_toBottomOf="@+id/Occupational" />
+
+            <TextView
+                android:id="@+id/occupational_injury"
+                android:layout_width="136dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="8dp"
+                android:text="Injuries: Often used for hand injuries, neurological conditions, and rehabilitation."
+                android:textColor="@color/faded_black"
+                android:textSize="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/occupational_purpose"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/occupational_purpose"
+                app:layout_constraintTop_toBottomOf="@+id/occupational_purpose" />
+
+            <View
+                android:id="@+id/button3"
+                android:layout_width="310dp"
+                android:layout_height="136dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/rounded1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.509"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+            <ImageView
+                android:id="@+id/spe"
+                android:layout_width="122dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="1px"
+                android:src="@drawable/speech"
+                app:layout_constraintBottom_toBottomOf="@+id/button3"
+                app:layout_constraintEnd_toEndOf="@+id/button3"
+                app:layout_constraintHorizontal_bias="0.689"
+                app:layout_constraintStart_toEndOf="@+id/occupational_purpose"
+                app:layout_constraintTop_toTopOf="@+id/button3"
+                app:layout_constraintVertical_bias="0.451" />
+
+            <TextView
+                android:id="@+id/Speech"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Speech Therapy"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/button3"
+                app:layout_constraintHorizontal_bias="0.078"
+                app:layout_constraintStart_toStartOf="@+id/button3"
+                app:layout_constraintTop_toTopOf="@+id/button3" />
+
+            <TextView
+                android:id="@+id/speech_purpose"
+                android:layout_width="143dp"
+                android:layout_height="26dp"
+                android:layout_marginTop="8dp"
+                android:width="280dp"
+                android:text="Purpose: Addresses speech, language, communication, and swallowing disorders."
+                android:textColor="@color/faded_black"
+                android:textSize="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/Speech"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/Speech"
+                app:layout_constraintTop_toBottomOf="@+id/Speech" />
+
+            <TextView
+                android:id="@+id/speech_injury"
+                android:layout_width="137dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="8dp"
+                android:text="Injuries: Traumatic brain injuries, strokes, and other neurological conditions."
+                android:textColor="@color/faded_black"
+                android:textSize="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/speech_purpose"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/speech_purpose"
+                app:layout_constraintTop_toBottomOf="@+id/speech_purpose" />
+
+            <View
+                android:id="@+id/button4"
+                android:layout_width="310dp"
+                android:layout_height="136dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/rounded1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.509"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+            <ImageView
+                android:id="@+id/mas"
+                android:layout_width="122dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="1px"
+                android:src="@drawable/massage"
+                app:layout_constraintBottom_toBottomOf="@+id/button4"
+                app:layout_constraintEnd_toEndOf="@+id/button4"
+                app:layout_constraintHorizontal_bias="0.689"
+                app:layout_constraintStart_toEndOf="@+id/occupational_purpose"
+                app:layout_constraintTop_toTopOf="@+id/button4"
+                app:layout_constraintVertical_bias="0.451" />
+
+            <TextView
+                android:id="@+id/Message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Massage Therapy"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/button4"
+                app:layout_constraintHorizontal_bias="0.078"
+                app:layout_constraintStart_toStartOf="@+id/button4"
+                app:layout_constraintTop_toTopOf="@+id/button4" />
+
+            <TextView
+                android:id="@+id/message_purpose"
+                android:layout_width="137dp"
+                android:layout_height="26dp"
+                android:layout_marginTop="8dp"
+                android:width="280dp"
+                android:text="Purpose: Addresses speech, language, communication, and swallowing disorders."
+                android:textColor="@color/faded_black"
+                android:textSize="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/Message"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/Message"
+                app:layout_constraintTop_toBottomOf="@+id/Message" />
+
+
+            <TextView
+                android:id="@+id/message_injury"
+                android:layout_width="147dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="8dp"
+                android:text="Injuries: Traumatic brain injuries, strokes, and other neurological conditions."
+                android:textColor="@color/faded_black"
+                android:textSize="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/message_purpose"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/message_purpose"
+                app:layout_constraintTop_toBottomOf="@+id/message_purpose" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/option"
+        android:layout_width="366dp"
+        android:layout_height="52dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="98dp"
+        android:layout_height="52dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/option"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="@+id/option"
+        app:layout_constraintTop_toTopOf="@+id/option"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/home_img"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/home"
+        app:layout_constraintEnd_toEndOf="@+id/home"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/home"
+        app:layout_constraintTop_toTopOf="@+id/home" />
+
+    <TextView
+        android:id="@+id/home_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:textColor="@color/faded_black"
+        android:textSize="30px"
+        android:textStyle="bold"
+        android:layout_marginTop="-8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/home"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/home"
+        app:layout_constraintTop_toBottomOf="@+id/home_img" />
+
+    <Button
+        android:id="@+id/profile"
+        android:layout_width="98dp"
+        android:layout_height="52dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/option"
+        app:layout_constraintHorizontal_bias="0.162"
+        app:layout_constraintStart_toEndOf="@+id/home" />
+
+    <ImageView
+        android:id="@+id/profile_img"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/profile"
+        app:layout_constraintEnd_toEndOf="@+id/profile"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/profile"
+        app:layout_constraintTop_toTopOf="@+id/profile" />
+
+    <TextView
+        android:id="@+id/profile_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="5dp"
+        android:text="Profile"
+        android:textColor="@color/faded_black"
+
+        android:textSize="30px"
+        app:layout_constraintBottom_toBottomOf="@+id/profile"
+        app:layout_constraintEnd_toEndOf="@+id/profile"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/profile"
+        app:layout_constraintTop_toBottomOf="@+id/profile_img" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="98dp"
+        android:layout_height="52dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/option"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toEndOf="@+id/profile" />
+
+    <ImageView
+        android:id="@+id/logout_img"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/logout"
+        app:layout_constraintEnd_toEndOf="@+id/logout"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/logout"
+        app:layout_constraintTop_toTopOf="@+id/logout" />
+
+    <TextView
+        android:id="@+id/logout_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Logout"
+        android:textColor="@color/faded_black"
+        android:textSize="30px"
+        app:layout_constraintBottom_toBottomOf="@+id/logout"
+        app:layout_constraintEnd_toEndOf="@+id/logout"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/logout"
+        app:layout_constraintTop_toBottomOf="@+id/logout_img" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

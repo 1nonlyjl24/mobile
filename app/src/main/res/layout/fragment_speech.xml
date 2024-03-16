@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/skyblue"
+    tools:context=".SpeechFragment">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="373dp"
+        android:layout_height="152dp"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/rounded1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:text="Speech Therapy"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="28dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="@color/skyblue"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <ScrollView
+        android:layout_width="354dp"
+        android:layout_height="597dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="310dp"
+                android:layout_height="142dp"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/speech1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="291dp"
+                android:layout_height="74dp"
+                android:layout_marginTop="44dp"
+                android:text="•Referral or Intake: Similar to occupational therapy, the process often begins with a referral from a physician, educator, family member, or the individual themselves seeking speech therapy services. The therapist gathers information about the client's medical history, communication or swallowing difficulties, and any relevant background information."
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.507"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="290dp"
+                android:layout_height="87dp"
+                android:layout_marginTop="44dp"
+                android:text="•Evaluation: The speech-language pathologist (SLP) conducts a comprehensive evaluation to assess the client's communication and/or swallowing abilities. This evaluation may include standardized assessments, informal observation of speech and language skills, oral motor examination, assessment of swallowing function, and interviews with the client and/or family members."
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="•Goal Setting: Based on the evaluation findings and in collaboration with the client (or family members/caregivers if applicable), the SLP establishes specific, measurable, achievable, relevant, and time-bound (SMART) goals related to communication and/or swallowing. These goals are tailored to the client's individual needs and may address areas such as speech production, language comprehension and expression, social communication, fluency, voice quality, or swallowing function."
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="•Intervention Planning: The SLP develops an individualized intervention plan to address the client's goals. This plan may include various therapeutic techniques and activities, such as:"
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.483"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="•Intervention Planning: The therapist develops an individualized intervention plan to address the client's goals. This plan may include a variety of interventions such as:"
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.483"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="240dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="28dp"
+                android:text="•Articulation Therapy: Targeting specific speech sounds or articulation errors to improve speech clarity."
+                android:textColor="@color/white"
+                android:textSize="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="240dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="28dp"
+                android:text="•Language Therapy: Addressing deficits in language comprehension (understanding) and expression (speaking, writing) through activities targeting vocabulary, grammar, sentence structure, and other language skills."
+                android:textColor="@color/white"
+                android:textSize="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="240dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="28dp"
+                android:text="•Social Communication Therapy: Helping clients improve their ability to interact socially, engage in conversations, understand nonverbal cues, and interpret social situations."
+                android:textColor="@color/white"
+                android:textSize="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="240dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="28dp"
+                android:text="•Fluency Therapy: Working with clients who stutter to improve fluency and reduce disfluencies in speech."
+                android:textColor="@color/white"
+                android:textSize="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="240dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="28dp"
+                android:text="•Assistive Technology: Introducing adaptive equipment or devices to help clients perform daily activities."
+                android:textColor="@color/white"
+                android:textSize="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="240dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="28dp"
+                android:text="•Voice Therapy: Addressing voice disorders such as vocal nodules, vocal cord paralysis, or vocal quality issues through exercises targeting vocal production and resonance."
+                android:textColor="@color/white"
+                android:textSize="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+            <TextView
+                android:id="@+id/textView99"
+                android:layout_width="240dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="28dp"
+                android:text="•Swallowing Therapy (Dysphagia Treatment): Providing exercises and strategies to improve swallowing function, reduce aspiration risk, and promote safe and efficient swallowing."
+                android:textColor="@color/white"
+                android:textSize="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="•Implementation: The SLP implements the intervention plan, working closely with the client (or family members/caregivers) to practice skills, learn new strategies, and make necessary adjustments along the way. Therapy sessions may be conducted one-on-one or in group settings, depending on the client's needs and goals."
+                android:textSize="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView99" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="•Progress Monitoring and Reassessment: Regularly assessing the client's progress towards their goals, adjusting the intervention plan as needed, and ensuring that interventions are effective and appropriate. The SLP may use standardized assessments, progress monitoring tools, and ongoing observation to track progress over time."
+                android:textSize="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="•Discharge Planning: Once the client has achieved their goals or made significant progress, the SLP collaborates with the client (or family members/caregivers) to plan for discharge from speech therapy services. This may involve providing recommendations for continued support, follow-up care, or strategies to maintain progress independently."
+                android:textSize="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/skyblue"
+    tools:context=".OccupationalFragment">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="373dp"
+        android:layout_height="152dp"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/rounded1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:text="Occupational Therapy"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="28dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="@color/skyblue"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <ScrollView
+        android:layout_width="354dp"
+        android:layout_height="597dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="310dp"
+                android:layout_height="142dp"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/occupational1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="294dp"
+                android:layout_height="63dp"
+                android:layout_marginTop="44dp"
+                android:text="•Referral or Intake: The process usually begins with a referral from a physician, educator, family member, or the individual themselves seeking OT services. The therapist gathers information about the client's medical history, current condition, and functional limitations."
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.516"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="•Evaluation: The occupational therapist conducts a comprehensive evaluation to assess the client's strengths, limitations, and goals. This evaluation may include standardized assessments, observation of functional tasks, interviews, and collaboration with other healthcare professionals."
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="•Goal Setting: Based on the evaluation findings and in collaboration with the client, the therapist establishes short-term and long-term goals. These goals are specific, measurable, achievable, relevant, and time-bound (SMART)."
+                android:textSize="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:textColor="@color/white"
+                android:text="•Implementation: It guides the patient through the exercises and techniques outlined in the treatment plan during therapy sessions. They also educate the patient on proper form, body mechanics, and ways to prevent further injury."
+                android:textSize="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="•Intervention Planning: The therapist develops an individualized intervention plan to address the client's goals. This plan may include a variety of interventions such as:"
+                android:textSize="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="240dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="28dp"
+                android:text="•Activities of Daily Living (ADL) Training: Helping clients improve their ability to perform self-care tasks like bathing, dressing, grooming, and feeding."
+                android:textColor="@color/white"
+                android:textSize="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="240dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="28dp"
+                android:text="•Functional Mobility Training: Assisting clients in improving their ability to move safely and independently within their environment."
+                android:textColor="@color/white"
+                android:textSize="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="240dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="28dp"
+                android:text="•Sensory Integration Therapy: Addressing sensory processing difficulties to improve the client's ability to interpret and respond to sensory information effectively."
+                android:textColor="@color/white"
+                android:textSize="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="240dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="28dp"
+                android:text="•Environmental Modifications: Making changes to the client's environment to enhance participation and independence."
+                android:textColor="@color/white"
+                android:textSize="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="240dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="28dp"
+                android:text="•Assistive Technology: Introducing adaptive equipment or devices to help clients perform daily activities."
+                android:textColor="@color/white"
+                android:textSize="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="240dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="28dp"
+                android:text="•Cognitive Rehabilitation: Addressing cognitive impairments such as memory, attention, and executive functioning through various techniques and exercises."
+                android:textColor="@color/white"
+                android:textSize="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="•Implementation: The therapist carries out the intervention plan, working closely with the client to practice skills, learn new strategies, and make necessary adjustments along the way."
+                android:textSize="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="•Progress Monitoring and Reassessment: Regularly assessing the client's progress towards their goals, adjusting the intervention plan as needed, and ensuring that interventions are effective and appropriate."
+                android:textSize="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="•Discharge Planning: Once the client has achieved their goals or made significant progress, the therapist collaborates with the client and other relevant parties to plan for discharge from occupational therapy services. This may involve providing recommendations for continued support, follow-up care, or strategies to maintain progress independently.."
+                android:textSize="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
